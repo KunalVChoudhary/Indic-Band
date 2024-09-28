@@ -1,0 +1,16 @@
+.navbar{
+    padding: 0px;
+}
+
+.navbar-brand{
+    font-family: $decorative;
+    color: $my-red;
+    font-size: 3rem;
+}
+
+.nav-item{
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    text-decoration: double;
+    text-transform: uppercase;
+}

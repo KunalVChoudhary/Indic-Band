@@ -1,0 +1,190 @@
+.hero{
+    background-image:
+    url('../images/home.jfif');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 20vh 0;
+}
+
+
+
+.about > .container-fluid > .row > .col-md-6 > p {
+    font-size: 1.1rem;
+  }
+
+.about-title{
+    background-image: url("../images/about-title.jfif");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vw;
+}
+
+.about-text{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    @include media-breakpoint-up(md){
+        padding-top: 7vh;
+        padding-bottom: 14vh;
+    }
+
+}
+
+.band-members{
+    position: relative;
+}
+
+.band-member{
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(md){
+        box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+        position: absolute;
+        z-index: 100;
+        top: -7vh;
+        }
+}
+
+.band-member-col{
+    position: relative;
+}
+
+.band-member-name{
+    margin-bottom: 0.25rem;
+    font-family: $san-srf;
+    text-transform: uppercase;
+}
+
+.parallax{
+    background-image: url('../images/parallax.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -100;
+}
+
+.parallax-home{
+    @include media-breakpoint-down(md) {
+        display: none;
+     }
+     @include media-breakpoint-up(lg) {
+        height: 30vmax;
+     } 
+    
+    height: 35vmax;
+    background-attachment: fixed;
+}
+
+
+.our-music{
+    margin-top: 3em;
+}
+
+.our-music-container{
+    background-color: black;
+    box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, .5);
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.music-title{
+    padding-bottom: 0.5em;
+}
+
+.music-cta{
+    padding-top: 2em;
+}
+
+.upcoming-show{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.shows{
+    font-size: 0.8rem;
+    font-weight: normal;
+    height: fit-content;
+}
+
+.shows> img{
+    min-height: 12vmax;
+}
+
+.shows h4{
+    font-family: $san-srf;
+    font-weight: bold;
+}
+
+.show-info > *{
+    margin: 0;
+}
+
+.date{
+    font-weight: 600;
+    margin-top: 1.5em;
+}
+
+.date>i{
+    font-size: 1rem;
+    margin-right:0.4em;
+    color: aliceblue;
+}
+
+.price{
+    font-weight: 600;
+    small{
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+}
+
+.price>i{
+    font-size: 1rem;
+    margin-right:0.4em;
+    color: aliceblue;
+}
+
+footer{
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include media-breakpoint-down(md){
+        text-align: center;
+    }
+}
+
+
+.footer-col-1{
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md){
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        display: block;
+    }
+}
+
+.footer-col-2{
+    text-align: right;
+    @include media-breakpoint-down(md){
+        margin-bottom: 0.25em;
+        ul{
+            flex-wrap: nowrap !important;
+        }
+    }
+}
+
+.footer-col-2 > ul >li{
+    margin: 0 !important;
+    flex-basis: calc(25% - 10px);
+    min-width: fit-content;
+    margin: 5px;
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .footer-col-2 > ul >li {
+        flex-basis: calc(50% - 10px);
+    }
+}

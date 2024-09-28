@@ -1,0 +1,20 @@
+body{
+    padding-top: 82px;
+    background-color: $gray-900;
+    color:aliceblue;
+    font-family: $san-srf;
+    font-size: 1.2rem;
+    font-weight: $light;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $decorative;
+}
+
+h1{
+    color: $my-red;
+}
+
+.lead{
+    margin-bottom: 2rem;
+}

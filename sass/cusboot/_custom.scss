@@ -1,0 +1,25 @@
+$enable-rounded:              false;
+
+// scss-docs-start display-headings
+.display-1{
+    font-size: 10vw !important ;
+}
+
+
+$lead-font-size: 1.1rem ;
+$lead-font-weight: 100 ;
+
+
+
+$btn-font-size: 1.25rem; 
+$btn-line-height:  1.6rem;
+$btn-padding-x: 2rem;
+$btn-padding-y: 0.5rem;
+
+
+
+$custom-spacers: (
+  6: $spacer * 2,
+);
+
+$spacers: map-merge($map1: $spacers, $map2:$custom-spacers )
